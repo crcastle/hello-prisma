@@ -1,0 +1,26 @@
+{
+  "name": "hello-prisma",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "migrate": "prisma migrate deploy",
+    "start": "ts-node index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/client": "^3.7.0",
+    "@types/express": "^4.17.13",
+    "@types/node": "^17.0.2",
+    "express": "^4.17.2",
+    "prisma": "^3.7.0",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.4"
+  },
+  "prisma": {
+    "seed": "ts-node prisma/seed.ts"
+  }
+}
